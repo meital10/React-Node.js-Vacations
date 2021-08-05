@@ -1,0 +1,103 @@
+.background_img {
+  position: fixed;
+  height: 60%;
+  width: 60%;
+  left: 0;
+  right: 0;
+  display: block;
+
+  background-size: cover;
+  /* filter: blur(13px);
+  opacity: 0.7; */
+}
+
+.formBox {
+  width: 80%;
+  padding: 45px 40px;
+  box-sizing: border-box;
+  height: 400px;
+  background: #fff;
+}
+
+.registration {
+  float: left;
+  width: 50%;
+  height: 400px;
+
+  background-size: cover;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+}
+
+.registration {
+  float: right;
+  width: 50%;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+#background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  display: block;
+  background: url("https://photographylife.com/wp-content/uploads/2017/05/img013-1200-copy.jpg")
+    no-repeat center;
+  background-size: cover;
+  filter: blur(13px);
+  opacity: 0.7;
+}
+
+.signUp {
+  font-weight: bold;
+  font-size: 16px;
+  /* position: absolute;
+  bottom: 10px;
+  right: 40px; */
+  cursor: pointer;
+}
+
+#lockIcon {
+  align-items: right;
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
