@@ -5,7 +5,7 @@ const session = require("express-session");
 const MySQLStore = require("express-mysql-session")(session);
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
-const { dbConfig, cookieConfig } = require("./config");
+const { passwordHash, dbConfig, cookieConfig } = require("./config");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const {
@@ -21,10 +21,10 @@ const path = require("path");
 const loginController = require("./controllers/login-controller");
 
 app.use(cors());
-app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, "../client/build")));
 
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
   // res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
 
@@ -34,7 +34,7 @@ app.use(cookieParser());
 
 app.use(
   session({
-    secret: "my_secret!$@#$",
+    secret: passwordHash,
     resave: false,
     saveUninitialized: false,
     store: new MySQLStore(dbConfig),

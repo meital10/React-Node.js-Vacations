@@ -10,5 +10,5 @@ module.exports = {
     httpOnly: false,
     maxAge: 1000 * 60000,
   },
-  passwordHash: "my_secret&@#$@!#$",
+  passwordHash: process.env.PASSWORD_HASH,
 };
